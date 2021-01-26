@@ -4,6 +4,7 @@ import Home from "./Home"
 import Greeting from "./Greeting"
 import RefHook from "./RefHook"
 import EffectHook from "./EffectHook"
+import Context from "./Context"
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 
@@ -21,6 +22,7 @@ function App() {
           ></Route>
           <Route path="/ref" exact={true} component={RefHook} />
           <Route path="/effect" exact={true} component={EffectHook} />
+          <Route path="/context" exact={true} component={Context} />
         </Switch>
       </Router>
     </div>
